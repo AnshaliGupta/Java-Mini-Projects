@@ -8,6 +8,7 @@ public class Main {
 		ArrayList<Student> als = new ArrayList<>();
 		int choice;
 		System.out.println("Student Grade Management System");
+		
 		do {
 			System.out.println("\n1. Add Student");
 			System.out.println("2. Display All Students");
@@ -15,6 +16,7 @@ public class Main {
 			System.out.println("Enter choice: ");
 			choice = ms.nextInt();
 			switch(choice) {
+			
 			case 1: 
 				Student s = new Student();
 				System.out.println("Enter RollNo.:- ");
@@ -28,6 +30,7 @@ public class Main {
 				}
 				als.add(s);
 				break;
+			
 			case 2:
 				if(als.size() == 0) {
 					System.out.println("No Student Record.");
@@ -38,13 +41,16 @@ public class Main {
 					}
 				}
 				break;
+			
 			case 3: 
 				System.out.println("Exiting Management System.");
 				break;
+			
 			default: 
 				System.out.println("Invalid choice.");
 			}
 		} while(choice != 3);
+		
+		ms.close();
 	}
-
 }

@@ -1,12 +1,12 @@
 package StudentGradeManagementSystem;
-//import java.util.Scanner;
 public class Student {
-	//Scanner sc = new Scanner(System.in);
+	
 	int rollNo;
 	String name;
 	double[] marks = new double[5];  //five subjects
 	double total;
 	char grade;
+	
 	/* Student() {
 		System.out.println("Enter RollNo.:- ");
 		rollNo = sc.nextInt();
@@ -17,11 +17,7 @@ public class Student {
 			marks[i] = sc.nextDouble();
 		}
 	} */
-	/* void setData(int rollNo, String name, double marks[]) {
-		this.rollNo = rollNo;
-		this.name = name;
-		this.marks = marks;
-	} */
+
 	void CalTotGrade() {
 		total = 0;
 		for(int i=0; i<5; i++) {
@@ -43,6 +39,7 @@ public class Student {
 			System.out.println("Invalid Marks");
 		}
 	}
+	
 	void displayData() {
 		System.out.println("RollNo. -> "+rollNo);
 		System.out.println("Name -> "+name);
