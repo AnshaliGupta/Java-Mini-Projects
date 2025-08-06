@@ -1,1 +1,1 @@
-This is repository for all Java Mini Console Projects.
+This is my repository of all Java Mini Console Projects.
