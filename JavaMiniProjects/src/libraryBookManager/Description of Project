@@ -1,0 +1,9 @@
+Console project of Library Management of Books. It contains functions for:
+-> Adding books to library.
+-> Search for a book in library.
+-> Display all books in the library.
+-> Issue books from library.
+
+Used ArrayList to store all books.
+Each Book contains its Id, Title and Issue Status.
+Handles cases like empty list and scanner closing effectively.
